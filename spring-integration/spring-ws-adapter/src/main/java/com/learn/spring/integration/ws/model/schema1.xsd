@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://learn/ws/ticket-producing-web-service" xmlns:tns="http://learn/ws/ticket-producing-web-service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="ticketRequest">
+    <xs:complexType>
+      <xs:sequence/>
+      <xs:attribute ref="tns:filmId" use="required"/>
+      <xs:attribute ref="tns:quantity" use="required"/>
+      <xs:attribute ref="tns:sessionDate" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:attribute name="filmId" type="xs:string"/>
+
+  <xs:attribute name="quantity" type="xs:integer"/>
+
+  <xs:attribute name="sessionDate" type="xs:date"/>
+</xs:schema>
+
